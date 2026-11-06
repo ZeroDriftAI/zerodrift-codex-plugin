@@ -1,0 +1,20 @@
+{
+  "name": "zerodrift",
+  "interface": {
+    "displayName": "ZeroDrift"
+  },
+  "plugins": [
+    {
+      "name": "zerodrift",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "description": "Check Gmail send, draft and forward tools with ZeroDrift before they run.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__codex_apps__gmail__(send_email|create_draft|update_draft|forward_emails)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$PLUGIN_ROOT/hooks/codex-gmail-shape.sh\"",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "^mcp__codex_apps__gmail__(send_email|create_draft)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$PLUGIN_ROOT/hooks/codex-gmail-subject.sh\"",
+            "timeout": 5
+          },
+          {
+            "type": "mcp_tool",
+            "server": "zerodrift",
+            "tool": "check_send",
+            "input": { "text": "${tool_input.subject}\n\n${tool_input.payload.body.content}" },
+            "timeout": 50
+          }
+        ]
+      },
+      {
+        "matcher": "^mcp__codex_apps__gmail__(update_draft|forward_emails)$",
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "zerodrift",
+            "tool": "check_send",
+            "input": { "text": "${tool_input.payload.body.content}" },
+            "timeout": 50
+          }
+        ]
+      }
+    ]
+  }
+}

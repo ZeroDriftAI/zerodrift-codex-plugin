@@ -1,0 +1,29 @@
+{
+  "name": "zerodrift",
+  "version": "0.1.3",
+  "description": "Catch compliance, PII and sensitive-data problems in AI-written messages against your company policies before they go out. Checks Gmail sends and drafts automatically.",
+  "author": {
+    "name": "ZeroDrift",
+    "url": "https://zerodrift.com"
+  },
+  "homepage": "https://github.com/ZeroDriftAI/zerodrift-codex-plugin#readme",
+  "repository": "https://github.com/ZeroDriftAI/zerodrift-codex-plugin",
+  "license": "LicenseRef-ZeroDrift-Proprietary",
+  "skills": "./skills/",
+  "hooks": "./hooks/codex-hooks.json",
+  "mcpServers": {
+    "zerodrift": {
+      "type": "http",
+      "url": "https://mcp.zerodrift.ai/mcp"
+    }
+  },
+  "interface": {
+    "displayName": "ZeroDrift",
+    "shortDescription": "Check messages against your policies before they go out",
+    "developerName": "ZeroDrift",
+    "category": "Productivity",
+    "websiteURL": "https://zerodrift.com",
+    "privacyPolicyURL": "https://zerodrift.com/legal/privacy-statement",
+    "termsOfServiceURL": "https://zerodrift.com/legal/terms-of-use"
+  }
+}
