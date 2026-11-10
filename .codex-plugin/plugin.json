@@ -1,6 +1,6 @@
 {
   "name": "zerodrift",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Catch compliance, PII and sensitive-data problems in AI-written messages against your company policies before they go out. Checks Gmail sends and drafts automatically.",
   "author": {
     "name": "ZeroDrift",
@@ -14,11 +14,20 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "ZeroDrift",
-    "shortDescription": "Check messages against your policies before they go out",
+    "shortDescription": "Check drafts against policies",
+    "longDescription": "ZeroDrift checks drafts against your company's compliance policies before they go out. Gmail sends, drafts, draft updates and forwards are checked automatically once you trust the hooks; anything else on request. Each check returns Passed, Warned or Flagged with the flagged lines, rules and a job ID. ZeroDrift never rewrites or sends your text. Attachments, forwarded originals and saved drafts sent as-is are not checked.",
     "developerName": "ZeroDrift",
     "category": "Productivity",
+    "capabilities": [
+      "Check Gmail sends and drafts before they go out",
+      "Check a draft against your policies",
+      "Show the ZeroDrift connection"
+    ],
     "websiteURL": "https://zerodrift.com",
+    "supportURL": "https://zerodrift.com/company/contact",
     "privacyPolicyURL": "https://zerodrift.com/legal/privacy-statement",
-    "termsOfServiceURL": "https://zerodrift.com/legal/terms-of-use"
+    "termsOfServiceURL": "https://zerodrift.com/legal/terms-of-use",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png"
   }
 }

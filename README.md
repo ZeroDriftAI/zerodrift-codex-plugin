@@ -42,5 +42,5 @@ The Codex CLI and the Codex desktop app. Hooks run only after you trust them.
 
 ## Support
 
-[support@zerodrift.com](mailto:support@zerodrift.com)
+[support@zerodrift.ai](mailto:support@zerodrift.ai)
 [https://zerodrift.com](https://zerodrift.com)
