@@ -1,6 +1,6 @@
 {
   "name": "zerodrift",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Catch compliance, PII and sensitive-data problems in AI-written messages against your company policies before they go out. Checks Gmail sends and drafts automatically.",
   "author": {
     "name": "ZeroDrift",
