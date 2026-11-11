@@ -48,6 +48,10 @@ First release. Validates drafts with ZeroDrift; never rewrites them.
 
 ## Codex
 
+### 0.1.9
+
+- **Version:** matches the OpenAI directory plugin; Codex and the directory now release together.
+
 ### 0.1.7
 
 - **Validate skill:** results are shown as a table of flagged lines with severity, rule and policy, without the job ID.
@@ -73,6 +77,10 @@ First release. ZeroDrift for Codex from `ZeroDriftAI/zerodrift-codex-plugin`.
 - **Check on request:** ask Codex to check a draft with ZeroDrift.
 
 ## OpenAI directory
+
+### 0.1.9
+
+- **Listing:** says an existing ZeroDrift account is required.
 
 ### 0.1.8
 
